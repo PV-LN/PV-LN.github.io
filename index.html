@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<title>Country Finder</title>
+	    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/component2.css" />
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="mapdata.js"></script>
+		<script src="worldmap.js"></script>
+		<script src="./search.js"></script>
+  </head>
+	<body>
+			
+			<div class="component">
+					<h3>To know the names of the countries<a href="#map" class="button">click</a></h3>
+			<div id="search" style="width:50%;padding-top:10%;">
+						<input id="mySearch" type="text" placeholder="Search.."  style="width:50%;"name="search">
+						<button class="button" onclick="find_countries()">search</button>
+					</div>
+		    </div>
+		<br>
+		<br>
+		
+	<div style="width:50%;margin-Left:30%;">
+	  <h1 class="tag">Search Results</h1>
+	  <button class="button"  style="float:right;" onclick="clear_countries()">clear</button>
+	  </div>
+	  <br>
+
+	
+	<ul id="countries" class="countries-container" style="color:black;"></ul>
+	<br></br>
+	<h4>Refer For the names of the countries</h4>
+	<section style="margin-top:10vh;">
+	 <div id="map"></div>
+	 </section>
+	
+    
+		<script src="js/polyfills.js"></script>
+		<script src="js/demo2.js"></script>
+	</body>
+</html>
+      
+    
+
